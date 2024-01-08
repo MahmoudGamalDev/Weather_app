@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #343D4A;
+}
+
+nav {
+    background-color: #212731;
+}
+
+input {
+    background-image: url("./imgs/icons8-search.svg");
+    background-repeat: no-repeat;
+    background-size: 27px;
+    background-position: 7px 8px;
+    border: none;
+    outline: none;
+}
+
+.week img {
+    width: 50px;
+}
+
+.day {
+    padding-right: 2.5em;
+    padding-left: 2.5em;
+}
+
+.day:first-child {
+    background-image: linear-gradient(135deg, #00e7ff, #27415a);
+}
