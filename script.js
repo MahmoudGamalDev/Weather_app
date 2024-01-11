@@ -24,14 +24,12 @@ let search = document.querySelector(".search input");
 let submitBtn = document.querySelector('button[type="submit"]');
 
 let searchCity = async () => {
-  console.log(search.value);
   let key = "0150b5277f0d45438b475635240701";
   let result = await fetch(
     `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${search.value}&days=7`
   );
   let data = await result.json();
   displayWeather(data);
-  console.log(data);
 };
 
 let getWeather = async () => {
